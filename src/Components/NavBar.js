@@ -1,6 +1,6 @@
 import React from "react";
 import { Link as ReactLink, useLocation } from "react-router-dom";
-import { Box, Flex, Text, Button, Stack, Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
+import { Box, Flex, Text, Button, Stack, Menu, MenuButton, MenuList, MenuItem, useColorMode } from "@chakra-ui/react";
 import Logo from "./Logo";
 
 const NavBar = ({ toggle, isOpen, setSelectedPropertyType, ...props }) => {
@@ -115,22 +115,27 @@ const MenuLinks = ({ isOpen, location, setSelectedPropertyType }) => (
   </Box>
 );
 
-const NavBarContainer = ({ children, ...props }) => (
-  <Flex
-    as="nav"
-    align="center"
-    justify="space-between"
-    wrap="wrap"
-    w="100%"
-    mb={8}
-    p={8}
-    textDecoration="none"
-    listStyleType="none"
-    bg={["#e1e1e0"]}
-    {...props}
-  >
-    {children}
-  </Flex>
-);
+const NavBarContainer = ({ children, ...props }) => {
+  const { colorMode } = useColorMode();
+  const bgColor = { light: "#e1e1e0", dark: "#91a3b0" };
+
+  return (
+    <Flex
+      as="nav"
+      align="center"
+      justify="space-between"
+      wrap="wrap"
+      w="100%"
+      mb={8}
+      p={8}
+      textDecoration="none"
+      listStyleType="none"
+      bg={bgColor[colorMode]}
+      {...props}
+    >
+      {children}
+    </Flex>
+  );
+};
 
 export default NavBar;
