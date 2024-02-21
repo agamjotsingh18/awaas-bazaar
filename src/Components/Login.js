@@ -6,7 +6,7 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 
 
 const Login = () => {
-    const navigate = useNavigate(); // Import useNavigate from react-router-dom
+    const navigate = useNavigate(); 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
@@ -15,7 +15,7 @@ const Login = () => {
     const handleLogin = async () => {
       try {
         await signInWithEmailAndPassword(auth, email, password);
-        navigate('/dashboard'); // Redirect to the dashboard after successful login
+        navigate('/dashboard'); 
       } catch (error) {
         setError(error.message);
       }

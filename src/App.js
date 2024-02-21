@@ -7,7 +7,6 @@ import Signup from './Components/Signup';
 import Home from './Components/Home';
 import Dashboard from './Components/Dashboard';
 import PrivateRoute from './Components/PrivateRoute';
-import ListAProperty from './Components/ListAProperty';
 import PropertyForm from './Components/PropertyForm';
 
 function App() {

@@ -16,7 +16,6 @@ const PrivateRoute = ({ element: Element, ...rest }) => {
   }, []);
 
   if (loading) {
-    // You can return a loading indicator here if needed
     return <div>Loading...</div>;
   }
 

@@ -55,7 +55,6 @@ const PropertyForm = ({ addProperty }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     addProperty(formData);
-    // Reset the form after submission
     setFormData({
       image: null,
       beds: 0,
@@ -69,7 +68,7 @@ const PropertyForm = ({ addProperty }) => {
   return (
     <Center>
       <Box p={8} borderWidth={1} borderRadius={8} boxShadow="lg">
-      {formSubmitted && ( // Display the message if formSubmitted is true
+      {formSubmitted && ( 
           <Alert status="success" mb={4}>
             <AlertIcon />
             Form submitted successfully!

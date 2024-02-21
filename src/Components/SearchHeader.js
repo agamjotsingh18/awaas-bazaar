@@ -14,12 +14,11 @@ const SearchHeader = () => {
         as="h2"
         size="xl"
         display={{ base: "none", md: "block" }}
-        mx="auto" // Set mx to "auto" for horizontal centering
+        mx="auto" 
       >
         Search Properties
       </Heading>
 
-      {/* The SearchBar will always be displayed on the opposite side */}
     </Flex>
   );
 };
