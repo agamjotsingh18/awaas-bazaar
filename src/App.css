@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+
+.copyright {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666;
+}

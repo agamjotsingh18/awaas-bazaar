@@ -10,7 +10,7 @@ const Data = [
     formattedPrice: "$1,900.00",
     reviewCount: 34,
     rating: 4,
-    newBadge: true
+    propertyType: "rent"
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const Data = [
     formattedPrice: "$1,500.00",
     reviewCount: 29,
     rating: 3,
-    newBadge:false
+    propertyType: "rent"
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const Data = [
     formattedPrice: "$1,000.00",
     reviewCount: 38,
     rating: 4,
-    newBadge: true
+    propertyType: "sell"
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ const Data = [
     formattedPrice: "$1,900.00",
     reviewCount: 30,
     rating: 5,
-    newBadge:false
+    propertyType: "rent"
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const Data = [
     formattedPrice: "$1,650.00",
     reviewCount: 26,
     rating: 4,
-    newBadge:false
+    propertyType: "sell"
   },
   {
     id: 6,
@@ -75,7 +75,7 @@ const Data = [
     formattedPrice: "$3,000.00",
     reviewCount: 40,
     rating: 5,
-    newBadge: true
+    propertyType: "sell"
   },
   {
     id: 7,
@@ -88,7 +88,7 @@ const Data = [
     formattedPrice: "$1,800.00",
     reviewCount: 19,
     rating: 2,
-    newBadge: true
+    propertyType: "rent"
   },
   {
     id: 8,
@@ -101,7 +101,7 @@ const Data = [
     formattedPrice: "$2,000.00",
     reviewCount: 38,
     rating: 4,
-    newBadge: true
+    propertyType: "sell"
   },
   {
     id: 9,
@@ -114,7 +114,7 @@ const Data = [
     formattedPrice: "$2,200.00",
     reviewCount: 40,
     rating: 5,
-    newBadge:false
+    propertyType: "sell"
   },
   {
     id: 10,
@@ -127,7 +127,7 @@ const Data = [
     formattedPrice: "$2,500.00",
     reviewCount: 28,
     rating: 4,
-    newBadge:false
+    propertyType: "sell"
   },
   {
     id: 11,
@@ -140,7 +140,7 @@ const Data = [
     formattedPrice: "$2,400.00",
     reviewCount: 24,
     rating: 3,
-    newBadge:false
+    propertyType: "rent"
   },
   {
     id: 12,
@@ -153,7 +153,7 @@ const Data = [
     formattedPrice: "$1,500.00",
     reviewCount: 44,
     rating: 4,
-    newBadge: true
+    propertyType: "rent"
   },
   {
     id: 13,
@@ -166,7 +166,7 @@ const Data = [
     formattedPrice: "$1,800.00",
     reviewCount: 37,
     rating: 5,
-    newBadge:false
+    propertyType: "sell"
   },
   {
     id: 14,
@@ -179,7 +179,7 @@ const Data = [
     formattedPrice: "$1,200.00",
     reviewCount: 25,
     rating: 3,
-    newBadge:false
+    propertyType: "rent"
   },
   {
     id: 15,
@@ -192,7 +192,7 @@ const Data = [
     formattedPrice: "$900.00",
     reviewCount: 12,
     rating: 3,
-    newBadge: true
+    propertyType: "rent"
   },
   {
     id: 16,
@@ -205,7 +205,7 @@ const Data = [
     formattedPrice: "$1,700.00",
     reviewCount: 29,
     rating: 3,
-    newBadge:false
+    propertyType: "rent"
   },
   {
     id: 17,
@@ -218,7 +218,7 @@ const Data = [
     formattedPrice: "$2,500.00",
     reviewCount: 37,
     rating: 5,
-    newBadge:false
+    propertyType: "sell"
   },
   {
     id: 18,
@@ -231,7 +231,7 @@ const Data = [
     formattedPrice: "$800.00",
     reviewCount: 10,
     rating: 2,
-    newBadge:false
+    propertyType: "sell"
   },
   {
     id: 19,
@@ -244,7 +244,7 @@ const Data = [
     formattedPrice: "$1,650.00",
     reviewCount: 44,
     rating: 4,
-    newBadge: true
+    propertyType: "rent"
   },
   {
     id: 20,
@@ -257,7 +257,7 @@ const Data = [
     formattedPrice: "$1,200.00",
     reviewCount: 24,
     rating: 3,
-    newBadge:false
+    propertyType: "sell"
   },
   {
     id: 21,
@@ -270,7 +270,7 @@ const Data = [
     formattedPrice: "$1,800.00",
     reviewCount: 36,
     rating: 4,
-    newBadge: false
+    propertyType: "rent"
   },
 ];
 

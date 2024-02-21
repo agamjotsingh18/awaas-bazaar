@@ -1,16 +1,29 @@
-import './App.css';
-import Cards from './Components/Cards';
-import CardsHeader from './Components/CardsHeader';
-import NavBar from './Components/NavBar';
-import SearchHeader from './Components/SearchHeader';
+// App.js
+import React from 'react';
+import { ChakraProvider, CSSReset, Box } from '@chakra-ui/react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './Components/Login';
+import Signup from './Components/Signup';
+import Home from './Components/Home';
+import Dashboard from './Components/Dashboard';
+import PrivateRoute from './Components/PrivateRoute';
+import ListAProperty from './Components/ListAProperty';
+import PropertyForm from './Components/PropertyForm';
 
 function App() {
   return (
-    <div className="App">
-     <NavBar />
-     <SearchHeader />
-     <CardsHeader />
-    </div>
+    <ChakraProvider>
+      <CSSReset />
+      <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/listaproperty" element={<PropertyForm />} />
+          </Routes>
+      </Router>
+    </ChakraProvider>
   );
 }
 

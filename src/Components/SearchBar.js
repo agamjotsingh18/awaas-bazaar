@@ -1,15 +1,24 @@
-import { Input } from '@chakra-ui/react'
-import React, { useState } from 'react'
+// SearchBar.js
+import { Input } from '@chakra-ui/react';
+import React, { useState } from 'react';
 
-const SearchBar = () => {
-      const [searchTerm, setSearchTerm] = useState('');
+const SearchBar = ({ onSearch }) => {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+    onSearch(e.target.value);
+  };
 
   return (
     <div>
-        <Input placeholder="Search for Search Bar" width="auto" onChange={(e)=>setSearchTerm(e.target.value)}/>
-
+      <Input
+        placeholder="Search for Search Bar"
+        width="auto"
+        onChange={handleSearch}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default SearchBar
+export default SearchBar;

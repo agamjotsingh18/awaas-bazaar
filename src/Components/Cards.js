@@ -14,7 +14,7 @@ const Cards= ({values})=> {
     beds,
     baths,
     reviewCount,
-    newBadge
+    propertyType
   } = values;
   return (
     <>
@@ -30,11 +30,14 @@ const Cards= ({values})=> {
 
                   <Box p="6">
                     <Box display="flex" alignItems="baseline">
-                     {newBadge ?
+                     {propertyType==="rent" ?
                       <Badge borderRadius="full" px="2" colorScheme="teal">
-                        New
+                        Rent
                       </Badge>
-                      :""
+                        :
+                      <Badge borderRadius="full" px="2" colorScheme="teal">
+                        Sell
+                      </Badge>
                      }
                       <Box
                         color="gray.500"
