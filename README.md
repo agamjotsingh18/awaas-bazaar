@@ -1,3 +1,14 @@
+# Awaas Bazaar
+**Awaas Bazaar** is a comprehensive real estate marketplace web application designed to simplify the process of buying, selling, and renting properties. Built using the MERN stack, this platform provides a seamless user experience for property seekers and owners.
+
+![Awaas Bazaar](cover-image.png)
+
+## Features
+- **User Authentication**: Secure login and registration using JWT for protected routes.
+- **Search by Title**: Users can easily search for properties using specific keywords or titles.
+- **Category Separation**: Users can filter properties based on rent or sell categories for more targeted results.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
